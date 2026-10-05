@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class DashboardController extends Controller
+{
+    public function index() {
+        return view('admin.dashboard', [
+            'title' => 'Dashboard',
+            'content' => 'Welcome to the dashboard! Here you can manage your application and view important information.',
+        ]);
+    }
+}
